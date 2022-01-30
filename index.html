@@ -33,7 +33,29 @@
                         <a-cone color="#1C232A" position="0 0.25 0" rotation = "0 0 180" radius-bottom="0.35" height="0.75" ></a-cone>
                         <a-cylinder color="#C0CBA9" position="0 0.65 0" radius="0.35" height=".05" ></a-cylinder>
                         <a-cylinder color="#C0CBA9" position="0 1.5 0" radius="0.1" height="2.5" ></a-cylinder>
-                        <a-sphere color = "#BAC26C" position="0 3 0" radius="0.15"></a-sphere>
+                        <a-sphere color = "#BAC26C" position="0 3 0" radius="0.02">
+                            <a-sphere color = "#BAC26C" position="0.04 0 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 0.03 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -0,04 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 0 .04" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 0.12 0.03" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -1.03 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -0.04 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.06 -0.03 0.04" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.06 -1,06 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.08 -0.06 0.04" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.06 -0.04 0.03" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -0.04 0.06" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 -0.08 0.04" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 0.05 0.04" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 -0.04 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -0.08 -0.05" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 0.1 0.03" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -0.1 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -1.4 -0.05" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 -1.6 0.03" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -0.18 0" radius="0.02"></a-sphere>
+                        </a-sphere>
                     </a-cylinder>
                    <a-box color="#C4C37F" position="-3.0 0.4 -2" rotation = "0 -15 0" depth="1.5" height=".25" width="2">
                         <a-box color="#C4C37F" position="0.4 0.4 0.9" rotation = "15 30 15" depth="1.5" height=".25" width="2"></a-box>
@@ -41,7 +63,7 @@
                 </a-cylinder>
             </a-box>
                 
-          
+            <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
 
             <a-plane position="0 0 5" width="300" height="100"  src = "#bottom" rotation="-90 0 0"></a-plane>
             <a-sky src = "#sky"></a-sky>
