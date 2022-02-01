@@ -35,10 +35,9 @@
                 <a-cylinder color="#6f1804" position="-.5 8 -.07" rotation="0 0 0" radius=".5" height=".5" ></a-cylinder>
                 <a-cylinder color="#6f1804" position="-.5 8 -6.05" rotation="0 0 0" radius=".5" height=".5" ></a-cylinder>
                 
-                <a-sphere color = "#f1c232" position=".083 16 -14" radius="1"></a-sphere>
-                <a-entity geometry="primitive: ring; radiusInner: 1; radiusOuter: 2" position=".083 16 -14" material = "side:double">
-                    <a-animation attribute="material.opacity" from="0" to="0.5" direction="alternate" repeat="3"></a-animation>
-                </a-entity>
+                <a-sphere color = "#f1c232" position=".083 16 -14" radius="1"
+                animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
+                <a-entity geometry="primitive: ring; radiusInner: 1; radiusOuter: 2" position=".083 16 -14" material = "side:double"></a-entity>
 
 
 
