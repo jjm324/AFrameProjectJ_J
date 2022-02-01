@@ -16,7 +16,7 @@
                 <img id="bottom" src="1.jpeg">
             </a-assets> 
                
-            <a-box color="#6f1804" position="-.33 1 -.04" rotation="0 45 0" depth=".5" height="7" width="0.5">
+            <a-box color="#6f1804" position="-.33 1 -.04" rotation="0 60 0" depth=".5" height="7" width="0.5">
                 <a-box color="#6f1804" position="-.3 0 -6.05" rotation="0 0 0" depth=".5" height="7" width="0.5"></a-box>
                 <a-box color="#6f1804" position="6 0 -6" rotation="0 0 0" depth=".5" height="24" width="0.5"></a-box>
                 <a-box color="#6f1804" position="6 0 0" rotation="0 0 0" depth=".5" height="24" width="0.5"></a-box>
@@ -27,6 +27,8 @@
 
                 <a-box color="#6f1804" position="6.065 12 -3.17" rotation="0 0 0" depth="8" height="2" width=".5"></a-box>
                 <a-box color="#6f1804" position="6.057 6.5 -2.919" rotation="0 0 0" depth="6" height="1.5" width=".5"></a-box>
+                <a-box color="#6f1804" position="-.1 1.5 -3.22" rotation="0 0 0" depth="6" height=".3" width=".5"></a-box>
+
                 <a-cylinder color="#6f1804" segments-radial="3" position="-.206 5 -.06" rotation="-90 0 0" scale=".5 .5 3"></a-cylinder>
                 <a-cylinder color="#6f1804" segments-radial="3" position="-.206 5 -6" rotation="-90 0 0" scale=".5 .5 3"></a-cylinder>
 
@@ -34,9 +36,9 @@
                 <a-cylinder color="#6f1804" position="-.5 8 -6.05" rotation="0 0 0" radius=".5" height=".5" ></a-cylinder>
                 
                 <a-sphere color = "#f1c232" position=".083 16 -14" radius="1"></a-sphere>
-                <a-entity geometry="primitive: ring; radiusInner: 1; radiusOuter: 2"                        
-                        position=".083 16 -14"
-                        material = "color :#FCCE59" ></a-entity>
+                <a-entity geometry="primitive: ring; radiusInner: 1; radiusOuter: 2" position=".083 16 -14" material = "side:double">
+                    <a-animation attribute="material.opacity" from="0" to="0.5" direction="alternate" repeat="3"></a-animation>
+                </a-entity>
 
 
 
@@ -49,47 +51,42 @@
                         <a-cylinder color="#C0CBA9" position="0 0.65 0" radius="0.35" height=".05" ></a-cylinder>
                         <a-cylinder color="#C0CBA9" position="0 1.5 0" radius="0.1" height="2.5" ></a-cylinder>
                         <a-sphere color = "#BAC26C" position="0 3 0" radius="0.02">
-                            <a-sphere color = "#FCCE59" position="0.04 0 0" radius="0.03"
+                            <a-sphere color = "#BAC26C" position="0.04 0 0" radius="0.03"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="0.04 0.03 0" radius="0.03"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1000"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 0.03 0" radius="0.04"></a-sphere>
                             <a-sphere color = "#BAC26C" position="-0.04 -0,04 0" radius="0.03"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
-                            <a-sphere color = "#FCCE59" position="-0.04 0 .04" radius="0.03"
+                            <a-sphere color = "#BAC26C" position="-0.04 0 .04" radius="0.02"
                             animation="property: position;from: -0.04 0 .04;to: 0.04 0 -0.04;loop: true;dir: alternate;dur: 3000;easing: easeInOutCubic"></a-sphere>
-                            <a-sphere color = "#FCCE59" position="0.04 0.12 0.03" radius="0.03"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 700"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="0 -1.03 0" radius="0.03"
+                            <a-sphere color = "#BAC26C" position="0.04 0.12 0.03" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -1.03 0" radius="0.02"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="-0.04 -0.04 0" radius="0.03"
-                            animation="property: position;from: -0.04 -0.04 0;to: 0.04 0.04 0;loop: true;dir: alternate;dur: 3000;easing: easeInOutCubic"></a-sphere>
-                            <a-sphere color = "#FCCE59" position="0.06 -0.03 0.04" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1400"></a-sphere>
-                            <a-sphere color = "#FDE199" position="-0.06 -1,06 0" radius="0.04"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1200"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -0.04 0" radius="0.02"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.06 -0.03 0.04" radius="0.02"
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
+                            <a-sphere color = "#FDE199" position="-0.06 -1,06 0" radius="0.04"></a-sphere>
                             <a-sphere color = "#BAC26C" position="0.08 -0.06 0.04" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1300"></a-sphere>
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#FDE199" position="0.06 -0.04 0.03" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1200"></a-sphere>
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#BAC26C" position="0 -0.04 0.06" radius="0.02"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#BAC26C" position="0.04 -0.08 0.04" radius="0.03"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 500"></a-sphere>
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#FDE199" position="-0.04 0.05 0.04" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0.5;loop: true; dir: alternate;dur: 1500"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="0.04 -0.04 0" radius="0.03"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1800"></a-sphere>
-                            <a-sphere color = "#FCCE59" position="-0.04 -0.08 -0.05" radius="0.03"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1400"></a-sphere>
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0.04 -0.04 0" radius="0.02"
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="-0.04 -0.08 -0.05" radius="0.02"
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#FDE199" position="0.04 0.1 0.03" radius="0.02"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="0 -0.1 0" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 500"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -0.1 0" radius="0.02"></a-sphere>
                             <a-sphere color = "#BAC26C" position="-0.04 -1.4 -0.05" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 500"></a-sphere>
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                             <a-sphere color = "#FDE199" position="0.04 -1.6 0.03" radius="0.02"
-                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1000"></a-sphere>
-                            <a-sphere color = "#BAC26C" position="0 -0.18 0" radius="0.03"
+                            animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
+                            <a-sphere color = "#BAC26C" position="0 -0.18 0" radius="0.02"
                             animation="property: opacity; from: 1；to: 0;loop: true; dir: alternate;dur: 1500"></a-sphere>
                         </a-sphere>
                     </a-cylinder>
@@ -103,7 +100,7 @@
 
             <a-plane position="0 0 5" width="300" height="100"  src = "#bottom" rotation="-90 0 0"></a-plane>
             <a-sky src = "#sky"></a-sky>
-            <a-camera  look-controls-enabled wasd-controls-enabled position="0 8 4"> 
+            <a-camera  look-controls-enabled wasd-controls-enabled position="0 9 12"> 
             </a-camera> 
         </a-scene>
     </body>
